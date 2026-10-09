@@ -18,7 +18,7 @@ if ($timeRange !== '') {
 
 try {
     $stmt = $pdo->prepare(
-        "SELECT ST_Y(lh.location) AS lat, ST_X(lh.location) AS lng, COUNT(*) as intensity
+        "SELECT ROUND(ST_Y(lh.location), 4) AS lat, ROUND(ST_X(lh.location), 4) AS lng, COUNT(*) as intensity
          FROM location_history lh
          WHERE lh.recorded_at > NOW() - INTERVAL ? HOUR
          $whereExtra

@@ -144,7 +144,8 @@ INSERT IGNORE INTO interests (category, name, icon) VALUES
 ('yasam', 'Kahve Tutkunu', '☕'),
 ('yasam', 'Doğa Sever', '🌿'),
 ('yasam', 'Gece Kuşu', '🦉'),
-('yasam', 'Erken Kalkan', '🌅'),
+('yasam', 'Erken Kalkan', '🌅');
+
 -- ============================================
 -- HESAP SİLME NEDENLERİ
 -- ============================================

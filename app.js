@@ -199,7 +199,7 @@ if (kayitFormu) {
         if (!eposta) return alert('E-posta gerekli.');
         if (!simpleValidateEmail(eposta).ok) return alert(simpleValidateEmail(eposta).message);
         if (!simpleValidatePassword(sifre).ok) return alert(simpleValidatePassword(sifre).message);
-        if (sifre !== sifreTekrar) return alert('Åifreler eşleşmiyor.');
+        if (sifre !== sifreTekrar) return alert('Şifreler eşleşmiyor.');
 
         apiFetch('register.php', {
             method: 'POST', headers: { 'Content-Type': 'application/json' },
@@ -247,7 +247,7 @@ function haritayiYukle() {
     const varsayilan = [39.905, 41.240];
     kampusHaritasi = L.map('haritaAlani').setView(varsayilan, 15);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: 'Â© OpenStreetMap | Kampüs Yolu'
+        attribution: '© OpenStreetMap | Kampüs Yolu'
     }).addTo(kampusHaritasi);
 
     // Harita tıklama - konum seçme modu
@@ -422,7 +422,7 @@ function haritaMarkerlariGuncelle(users) {
         const popup = `<div class="kullanici-popup">
             ${popupAvatarHtml}
             <h4>${u.display_name || 'Anonim'}</h4>
-            <div class="uyum-bilgi">Uyum: %${u.compatibility} Â· ${Math.round(u.distance)}m uzakta</div>
+            <div class="uyum-bilgi">Uyum: %${u.compatibility} · ${Math.round(u.distance)}m uzakta</div>
             <div class="uyum-bar-bg"><div class="uyum-bar" style="width:${u.compatibility}%;background:${renk};"></div></div>
             <div class="popup-etiketler">${hobilerHtml}</div>
             <div class="popup-butonlar">

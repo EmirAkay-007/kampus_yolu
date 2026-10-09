@@ -1,0 +1,9 @@
+# Uploaded files (when the upload paths point inside the project)
+backend/uploads/
+
+# Editors and OS
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store
